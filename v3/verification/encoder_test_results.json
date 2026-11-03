@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "level": "II digital simulation",
+  "scope": "Known-input independent phase/cycle/signed64 speed model, old encoder_guard and literal old top speed shadow bound by source hashes. Directed ticks and three actual 500000-cycle windows; no hardware/CDC/implementation claim.",
+  "debounce_cycles": 4,
+  "natural_window_cycles": 500000,
+  "source_sha256": {
+    "V3/v3/src/encoder.v": "b6fec53459f6a1e930568d14aae8c19fa3aedc2976f65b330b5f91e9c7d137a8",
+    "V3/v3/tb/tb_encoder.v": "80384d60d49dfd420d75a866ba84e271c8f74eaa6659acd28cd49ed390449a82",
+    "v2.2/src/encoder_guard.v": "c4612addc93b14db0603350355a5a6672245c7629de2760f5edf0a04668bd018",
+    "v2.2/src/top.v": "219e25a797c8fce1201bf35be8db6cbe982885eaade9b83073672aaf5e9e592f",
+    "V3/v3/verification/run_encoder_tests.py": "bf7b54fdc6ca77eb9b04e37289e59e2fafcf1cd01985e7bf3681fb8f156cf4e1"
+  },
+  "temporary_build_directory": "C:\\Users\\ZLL\\AppData\\Local\\Temp\\j280_v3_encoder_joskx4gk",
+  "tests": [
+    {
+      "mode": "g2005",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "summary": "PASS ENCODER cycles=1513315 checks=1513329 directed=32 transitions=65535 windows=3 boundaries=6 random=12000 resets=5",
+      "compile_log": "encoder_compile_g2005.log",
+      "simulate_log": "encoder_simulate_g2005.log"
+    },
+    {
+      "mode": "g2012",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "summary": "PASS ENCODER cycles=1513315 checks=1513329 directed=32 transitions=65535 windows=3 boundaries=6 random=12000 resets=5",
+      "compile_log": "encoder_compile_g2012.log",
+      "simulate_log": "encoder_simulate_g2012.log"
+    }
+  ],
+  "source_hashes_unchanged_during_run": true
+}

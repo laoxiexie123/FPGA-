@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "II digital simulation of the actual top and all production modules.\n\nReal 50MHz clocks run for the first 10ms: 500100 cycles verify generated\n1/5/10ms enables and actual ADC/observer initialization. Subsequent readiness,\nkey-debounce and ADC sampling terminal counts are preloaded in the testbench;\nthese are accelerated boundary tests, not a full 100ms stable wait, a full\n20ms key hold, board timing validation, synthesis, or a hardware safety proof.\nNo RTL parameters change and no mock modules replace production RTL.\n",
+  "source_sha256": {
+    "V3/v3/src/top.v": "0cad32647da7985c15c8490a2ccc42c359d54271741738427fd04ac86657445f",
+    "V3/v3/src/key_filter.v": "5c077059dc77124c63875425e8a5fa1b489b51300b0b8d8974befac5295560fa",
+    "V3/v3/src/adc_pend.v": "8dda1695851b260e887fef0d81ba61c484f609625c706e37cbbc9629dc6a35ad",
+    "V3/v3/src/encoder.v": "b6fec53459f6a1e930568d14aae8c19fa3aedc2976f65b330b5f91e9c7d137a8",
+    "V3/v3/src/swing_control.v": "5beb5159e9d196c81f9b645cae7bc13518c45a31eefbd29fbdccc335aadb2f33",
+    "V3/v3/src/balance_control.v": "25ce1d2d358c419012b66b63531e249366397ae14e8c87c450efd316f365aa33",
+    "V3/v3/src/motro.v": "fa5b58ca7d37eb91334b07d85f1f121ad06240114bc6062201103f2ab73d6480",
+    "V3/v3/src/position_reference.v": "0d8c22899b22b4fcd6786d50a09256aac7e34da14fa4198a94a2bd0458f5bb30",
+    "V3/v3/tb/tb_top.v": "5cce9671c7e9a3b26b94da94bd5ca4d841e150a3182692b495a99ebc52e5428b",
+    "V3/v3/verification/run_top_tests.py": "419a07bd3568f6881ca7b2834be8929e9c7414e968703d9c5559f3b5943b8090"
+  },
+  "tests": [
+    {
+      "mode": "g2005",
+      "summary": "PASS TOP cycles=564274 checks=208 real_10ms_cycles=500100 ticks=10/2/1 guard_cases=8 start_events=22 transmit_events=2 core_results=5 pwm_high=18167 ready_wait_preloaded=1 key_wait_preloaded=1\nE:\\j280program\\V3\\v3\\tb\\tb_top.v:236: $finish called at 11285472000 (1ps)",
+      "exit": 0
+    },
+    {
+      "mode": "g2012",
+      "summary": "PASS TOP cycles=564274 checks=208 real_10ms_cycles=500100 ticks=10/2/1 guard_cases=8 start_events=22 transmit_events=2 core_results=5 pwm_high=18167 ready_wait_preloaded=1 key_wait_preloaded=1\nE:\\j280program\\V3\\v3\\tb\\tb_top.v:236: $finish called at 11285472000 (1ps)",
+      "exit": 0
+    }
+  ],
+  "verification_level": "II; no synthesis, P&R or board claim",
+  "source_hashes_unchanged_during_run": true
+}

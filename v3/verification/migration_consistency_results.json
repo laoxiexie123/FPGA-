@@ -1,0 +1,62 @@
+{
+  "scope": "Read-only consistency checks and executed digital compile/unit regressions; not synthesis or board validation",
+  "core_byte_identical_to_current_V3": {
+    "adc_pend.v": true,
+    "encoder.v": true,
+    "motro.v": true,
+    "balance_control.v": true,
+    "swing_control.v": true,
+    "position_reference.v": true
+  },
+  "old_UI_byte_identical": {
+    "ec11_input.v": true,
+    "ui_font.vh": true
+  },
+  "project_files_exist": true,
+  "exact_project_filelist_compile": [
+    "g2005",
+    "g2012"
+  ],
+  "unit_results": {
+    "ui_bridge": {
+      "modes": [
+        "g2005",
+        "g2012"
+      ],
+      "checks_per_mode": 324
+    },
+    "position_reference": {
+      "modes": [
+        "g2005",
+        "g2012"
+      ],
+      "checks_per_mode": 81668
+    },
+    "balance": {
+      "modes": [
+        "g2005",
+        "g2012"
+      ],
+      "checks_per_mode": 236,
+      "cycle_comparisons_per_mode": 2474
+    }
+  },
+  "source_sha256": {
+    "adc_pend.v": "8dda1695851b260e887fef0d81ba61c484f609625c706e37cbbc9629dc6a35ad",
+    "balance_control.v": "25ce1d2d358c419012b66b63531e249366397ae14e8c87c450efd316f365aa33",
+    "ec11_input.v": "c83df73a6ec018ece8e9d606ff0cbee47150662a9cea4e337a67387b4748275d",
+    "encoder.v": "b6fec53459f6a1e930568d14aae8c19fa3aedc2976f65b330b5f91e9c7d137a8",
+    "key_filter.v": "5c077059dc77124c63875425e8a5fa1b489b51300b0b8d8974befac5295560fa",
+    "local_startup_profile.v": "63718c52287eb33b66fc4a3b46b97876c0bc6370189fae31394d598cb578b8db",
+    "motro.v": "fa5b58ca7d37eb91334b07d85f1f121ad06240114bc6062201103f2ab73d6480",
+    "position_reference.v": "0d8c22899b22b4fcd6786d50a09256aac7e34da14fa4198a94a2bd0458f5bb30",
+    "swing_control.v": "330a8e916285e22d31aac89d9bf6970fe2627656a0d069997f4f87afddeeeb9e",
+    "top.cst": "2f08766417ade5d05fceb40d0ac6a6fe479456041c6e06668c306ee742905ae9",
+    "top.sdc": "bd393d9f660c341c4324b393dbee6fba0ce54e2cd595e245ebf740786b2b0f39",
+    "top.v": "d1b5d63d2aad69606d5b6f0ce6584aac0ceef9399c896fff806f96cda97a92c5",
+    "ui_controller.v": "a74a13c9a023af6c9221d77efd76132e086f966ed874765fb55263d5f5417a8f",
+    "ui_control_bridge.v": "64b2f24676623572103f16d504f8b7e440ff0e27a62b72bfe6b976e30395fb16",
+    "ui_font.vh": "24b7f5975cb1cd4af37279da72a2ed2da170c810b2df2d7c8775e8d6d4d4a593",
+    "ui_lcd.v": "cd638cd5d66bb6b42c6da83a465bdaf190694a3ddc3f660704952a6a60e54dfc"
+  }
+}

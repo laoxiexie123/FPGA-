@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "scope": "Real 50MHz ADC and four-mode startup integration with actual balance PD; separate balance differential tests verify numeric behavior. Origin delay preloaded near terminal count: tests last two cycles and real PD origin seeding, not full 0.5s wait. No board or complete safety-system claim",
+  "source_sha256": {
+    "V3/v3/src/adc_pend.v": "8dda1695851b260e887fef0d81ba61c484f609625c706e37cbbc9629dc6a35ad",
+    "V3/v3/src/swing_control.v": "a244c6ea3b4f2ca3afeb23b050c2d3c07ee116757f2b1598fb6feb60f2348087",
+    "V3/v3/src/balance_control.v": "42513fb10230e887542c7c06e6f9bc338cd08f4f55a0849404cbf504df0c049d",
+    "V3/v3/tb/tb_pendulum_startup.v": "b7794e5cddebf02459b9cf5caa56c7ae73933d2758d3a855e07a8036afe33429",
+    "V3/v3/verification/run_startup_tests.py": "eea03853c8b8276d4c748af369e43d759cc4e68c782fca2edc47dbb102820df6"
+  },
+  "tests": [
+    {
+      "mode": "g2005",
+      "summary": "PASS STARTUP real_cycles=3750125 samples=15 origin_checks=2 actual_PD=1 origin_wait_preloaded=1\nE:\\j280program\\V3\\v3\\tb\\tb_pendulum_startup.v:96: $finish called at 75002511000 (1ps)",
+      "exit": 0
+    },
+    {
+      "mode": "g2012",
+      "summary": "PASS STARTUP real_cycles=3750125 samples=15 origin_checks=2 actual_PD=1 origin_wait_preloaded=1\nE:\\j280program\\V3\\v3\\tb\\tb_pendulum_startup.v:96: $finish called at 75002511000 (1ps)",
+      "exit": 0
+    }
+  ],
+  "source_hashes_unchanged_during_run": true
+}

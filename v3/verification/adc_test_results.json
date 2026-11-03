@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "level": "II digital simulation",
+  "scope": "Independent numeric/cycle model and old ADC plus full-core normal filter path. No core fault-hold coupling equivalence, ADC board timing, synthesis or hardware claim.",
+  "sample_period_cycles": 9375,
+  "group_samples": 8,
+  "filter_alpha": 128,
+  "source_sha256": {
+    "V3/v3/src/adc_pend.v": "8dda1695851b260e887fef0d81ba61c484f609625c706e37cbbc9629dc6a35ad",
+    "V3/v3/tb/tb_adc_pend.v": "33d0371d5dedc7d35d34b0e4f4893cca441e26fae5161f7f711534d33163b1ce",
+    "V3/v3/tb/tb_adc_freshness.v": "c1444d5ab18220559075c7291161af42851e5d3ac99865c6c75384085c564ecc",
+    "v2.2/src/adc_pend.v": "c75f4d68eaf57c78afe3c732274c4182249fc901febae09aa018461cde3ba535",
+    "v2.2/src/dual_pd_core.v": "38a7b3abb1897a3442781df4defc7a7eeaed9978f59f59f19f0cb84af604da93",
+    "V3/v3/verification/run_adc_tests.py": "ab33916a18dcd20b34bd863e78ac7e0e443fd074b53e277ab7dd48c70ac901df"
+  },
+  "temporary_build_directory": "C:\\Users\\ZLL\\AppData\\Local\\Temp\\j280_v3_adc_4e9yw_nq",
+  "tests": [
+    {
+      "mode": "g2005",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "summary": "PASS ADC cycles=4453144 checks=4453149 means=59 updates=55 clear_mask=15 fractional=28 down=14 rounded=28 resets=2",
+      "compile_log": "compile_g2005.log",
+      "simulate_log": "simulate_g2005.log"
+    },
+    {
+      "mode": "g2012",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "summary": "PASS ADC cycles=4453144 checks=4453149 means=59 updates=55 clear_mask=15 fractional=28 down=14 rounded=28 resets=2",
+      "compile_log": "compile_g2012.log",
+      "simulate_log": "simulate_g2012.log"
+    },
+    {
+      "mode": "g2005",
+      "name": "freshness",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "simulate_log": "freshness_simulate_g2005.log"
+    },
+    {
+      "mode": "g2012",
+      "name": "freshness",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "simulate_log": "freshness_simulate_g2012.log"
+    }
+  ],
+  "source_hashes_unchanged_during_run": true
+}

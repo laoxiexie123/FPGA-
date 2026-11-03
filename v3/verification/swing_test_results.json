@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "source_sha256": {
+    "V3\\v3\\src\\swing_control.v": "a244c6ea3b4f2ca3afeb23b050c2d3c07ee116757f2b1598fb6feb60f2348087",
+    "V3\\v3\\tb\\tb_swing_control.v": "8481f52c620aff42b49dbaab407e799c575712c5d828aab449298e09b9c30316",
+    "v2.2\\src\\swing_supervisor.v": "78acc919e50189b2dfca56383413d4d9f07675e17e4dae89b70369d28b09daf8",
+    "V3\\v3\\verification\\run_swing_tests.py": "7b02825397728012639877401f8d3e7dfeaa0bf60ba3cea5e219503a36e04c0e"
+  },
+  "tests": [
+    {
+      "mode": "g2005",
+      "summary": "PASS SWING cycles=303527 checks=86 old_comparisons=302410\nE:\\j280program\\V3\\v3\\tb\\tb_swing_control.v:179: $finish called at 6070544000 (1ps)"
+    },
+    {
+      "mode": "g2012",
+      "summary": "PASS SWING cycles=303527 checks=86 old_comparisons=302410\nE:\\j280program\\V3\\v3\\tb\\tb_swing_control.v:179: $finish called at 6070544000 (1ps)"
+    }
+  ],
+  "scope": "II accelerated-enable simulation, old mode3 normal path and independent registered ADC capture readiness including +/-380 and signed13 extremes; origin delay terminal edges with counter deposit, single-cycle seed and cancellation gating (not full 25000000-cycle delay); explicit start/failure differences intentional. No hardware proof.",
+  "compatibility_differences": [
+    "rising-edge explicit start; held start cannot retry",
+    "stop/failure idle; failure retained until new legal edge",
+    "boost_ms_q and brake_last_q reset repaired; boost timer crosses balance",
+    "only mode3 fixed constants; no cfg, diagnostics or direct-balance mode"
+  ],
+  "source_hashes_unchanged_during_run": true
+}

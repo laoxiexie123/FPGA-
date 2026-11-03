@@ -1,0 +1,20 @@
+# Gowin generated synthesis, place-and-route and programming outputs
+v3/impl/
+*.gprj.user
+
+# Simulation artifacts and Python cache
+__pycache__/
+*.py[cod]
+*.vvp
+*.vcd
+*.fst
+*.log
+
+# Local settings / credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+Thumbs.db

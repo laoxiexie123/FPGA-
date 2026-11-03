@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "scope": "II digital simulation: fixed balance controller versus complete legacy core.\n\nLegacy ADC owns filtering and feeds identical Q8/x4 to the new external-ADC\ninterface on each edge. Default PD (legacy Ki=0, external reference disabled) retained control outputs\n(motor command, commit, busy, fault, reason) and commit timing are compared each cycle.\nIndependent angle checks and position cadence/cancellation checks read existing algorithm state only in the testbench;\nno diagnostic RTL ports, shadow registers or hardware sequence counters are retained.\nPosition integral and external Q16 reference have been intentionally removed from stage3 onward.\nExternal ADC range faults are tested separately: legacy raw/alpha/ADC-busy\nfault coupling is intentionally not claimed as part of the migrated controller.\n",
+  "stage": "",
+  "source_sha256": {
+    "V3.1/v3/src/balance_control.v": "25ce1d2d358c419012b66b63531e249366397ae14e8c87c450efd316f365aa33",
+    "V3.1/v3/tb/tb_balance_control.v": "48e0d6fcd12ad2a8cb79d4654f50b3c77896f335c9888bac5b528a51021bf877",
+    "v2.2/src/dual_pd_core.v": "38a7b3abb1897a3442781df4defc7a7eeaed9978f59f59f19f0cb84af604da93",
+    "V3.1/v3/verification/run_balance_tests.py": "5df79cc48eb747765bb7679938784b583aa6302369f430d3e82170f99fff647c"
+  },
+  "tests": [
+    {
+      "mode": "g2005",
+      "summary": "LATENCY accept_to_commit angle=10 position=21 weighted=24 direct_wait=11111\nPASS BALANCE cycles=3259 comparisons=2474 checks=236 commits=118 models=113 anti_outer=0 anti_motor=0 freeze=0 deleted=27 stages=00fffff\nE:\\j280program\\V3.1\\v3\\tb\\tb_balance_control.v:291: $finish called at 65180000 (1ps)",
+      "exit": 0
+    },
+    {
+      "mode": "g2012",
+      "summary": "LATENCY accept_to_commit angle=10 position=21 weighted=24 direct_wait=11111\nPASS BALANCE cycles=3259 comparisons=2474 checks=236 commits=118 models=113 anti_outer=0 anti_motor=0 freeze=0 deleted=27 stages=00fffff\nE:\\j280program\\V3.1\\v3\\tb\\tb_balance_control.v:291: $finish called at 65180000 (1ps)",
+      "exit": 0
+    }
+  ],
+  "verification_level": "II; no synthesis, timing closure or board claim",
+  "source_hashes_unchanged_during_run": true
+}

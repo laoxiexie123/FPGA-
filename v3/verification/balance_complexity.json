@@ -1,0 +1,1656 @@
+{
+  "scope": "Scalar output/internal reg declarations, not synthesized cells; wire/localparam excluded",
+  "versions": [
+    {
+      "path": "verification/migration_baseline/balance_control.v",
+      "sha256": "210c3f929e5b16f8720ef600122245057610a91018a2b1ad3d60858908ba2b26",
+      "lines": 807,
+      "register_variables": 71,
+      "declared_bits": 2192,
+      "sequential_variables": 71,
+      "sequential_declared_bits": 2192,
+      "combinational_reg_variables": [],
+      "registers": [
+        {
+          "name": "motor_command",
+          "bits": 16
+        },
+        {
+          "name": "result_valid",
+          "bits": 1
+        },
+        {
+          "name": "calculating",
+          "bits": 1
+        },
+        {
+          "name": "control_fault",
+          "bits": 1
+        },
+        {
+          "name": "fault_code",
+          "bits": 8
+        },
+        {
+          "name": "position_filtered_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_error_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "angle_delta_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "position_error_counts",
+          "bits": 32
+        },
+        {
+          "name": "position_delta_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_command",
+          "bits": 32
+        },
+        {
+          "name": "angle_offset_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "raw_motor_command",
+          "bits": 32
+        },
+        {
+          "name": "control_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_loop_active_q",
+          "bits": 1
+        },
+        {
+          "name": "state_q",
+          "bits": 5
+        },
+        {
+          "name": "multiply_return_q",
+          "bits": 5
+        },
+        {
+          "name": "position_holds_q",
+          "bits": 3
+        },
+        {
+          "name": "position_due_q",
+          "bits": 1
+        },
+        {
+          "name": "position_seeded_q",
+          "bits": 1
+        },
+        {
+          "name": "angle_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "previous_angle_q",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_q",
+          "bits": 32
+        },
+        {
+          "name": "position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "gain_ap_q",
+          "bits": 32
+        },
+        {
+          "name": "gain_ad_q",
+          "bits": 32
+        },
+        {
+          "name": "gain_pp_q",
+          "bits": 32
+        },
+        {
+          "name": "gain_pd_q",
+          "bits": 32
+        },
+        {
+          "name": "position_alpha_q",
+          "bits": 32
+        },
+        {
+          "name": "position_sample_q",
+          "bits": 32
+        },
+        {
+          "name": "pending_position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ea_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ea_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_da_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ep_q",
+          "bits": 32
+        },
+        {
+          "name": "work_dp_q",
+          "bits": 32
+        },
+        {
+          "name": "work_position_q",
+          "bits": 32
+        },
+        {
+          "name": "position_target_q",
+          "bits": 32
+        },
+        {
+          "name": "external_reference_q",
+          "bits": 1
+        },
+        {
+          "name": "reference_snapshot_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ep_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_pwm1_q",
+          "bits": 32
+        },
+        {
+          "name": "work_pwm2_q",
+          "bits": 32
+        },
+        {
+          "name": "position_bound_q",
+          "bits": 32
+        },
+        {
+          "name": "limit_snapshot_q",
+          "bits": 16
+        },
+        {
+          "name": "weight_snapshot_q",
+          "bits": 16
+        },
+        {
+          "name": "work_duty_q",
+          "bits": 16
+        },
+        {
+          "name": "multiply_a_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_b_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_result_q",
+          "bits": 64
+        },
+        {
+          "name": "proportional_term_q",
+          "bits": 64
+        },
+        {
+          "name": "pd_sum_q",
+          "bits": 64
+        },
+        {
+          "name": "work_mix_q",
+          "bits": 64
+        },
+        {
+          "name": "work_diff_q",
+          "bits": 64
+        },
+        {
+          "name": "friction_q",
+          "bits": 16
+        },
+        {
+          "name": "ref_offset_q",
+          "bits": 32
+        },
+        {
+          "name": "ki_snapshot_q",
+          "bits": 32
+        },
+        {
+          "name": "motor_saturated_snapshot_q",
+          "bits": 1
+        },
+        {
+          "name": "integral_q24_q",
+          "bits": 64
+        },
+        {
+          "name": "work_integral_q24_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_increment_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_addend_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_candidate_q",
+          "bits": 64
+        },
+        {
+          "name": "bounded_integral_q",
+          "bits": 64
+        },
+        {
+          "name": "candidate_total_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_magnitude_q",
+          "bits": 64
+        },
+        {
+          "name": "candidate_magnitude_q",
+          "bits": 64
+        },
+        {
+          "name": "reject_outer_q",
+          "bits": 1
+        }
+      ]
+    },
+    {
+      "path": "verification/migration_stages/stage1_balance.v",
+      "sha256": "9c11510ccaa963d8129b36bb23e4b0145f99871c7c0fb052acedc59fe0072efd",
+      "lines": 789,
+      "register_variables": 64,
+      "declared_bits": 1969,
+      "sequential_variables": 64,
+      "sequential_declared_bits": 1969,
+      "combinational_reg_variables": [],
+      "registers": [
+        {
+          "name": "motor_command",
+          "bits": 16
+        },
+        {
+          "name": "result_valid",
+          "bits": 1
+        },
+        {
+          "name": "calculating",
+          "bits": 1
+        },
+        {
+          "name": "control_fault",
+          "bits": 1
+        },
+        {
+          "name": "fault_code",
+          "bits": 8
+        },
+        {
+          "name": "position_filtered_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_error_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "angle_delta_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "position_error_counts",
+          "bits": 32
+        },
+        {
+          "name": "position_delta_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_command",
+          "bits": 32
+        },
+        {
+          "name": "angle_offset_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "raw_motor_command",
+          "bits": 32
+        },
+        {
+          "name": "control_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_loop_active_q",
+          "bits": 1
+        },
+        {
+          "name": "state_q",
+          "bits": 5
+        },
+        {
+          "name": "multiply_return_q",
+          "bits": 5
+        },
+        {
+          "name": "position_holds_q",
+          "bits": 3
+        },
+        {
+          "name": "position_due_q",
+          "bits": 1
+        },
+        {
+          "name": "position_seeded_q",
+          "bits": 1
+        },
+        {
+          "name": "angle_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "previous_angle_q",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_q",
+          "bits": 32
+        },
+        {
+          "name": "position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "angle_boost_active",
+          "bits": 1
+        },
+        {
+          "name": "position_sample_q",
+          "bits": 32
+        },
+        {
+          "name": "pending_position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ea_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ea_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_da_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ep_q",
+          "bits": 32
+        },
+        {
+          "name": "work_dp_q",
+          "bits": 32
+        },
+        {
+          "name": "work_position_q",
+          "bits": 32
+        },
+        {
+          "name": "position_target_q",
+          "bits": 32
+        },
+        {
+          "name": "external_reference_q",
+          "bits": 1
+        },
+        {
+          "name": "reference_snapshot_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ep_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_pwm1_q",
+          "bits": 32
+        },
+        {
+          "name": "work_pwm2_q",
+          "bits": 32
+        },
+        {
+          "name": "weight_snapshot_q",
+          "bits": 16
+        },
+        {
+          "name": "work_duty_q",
+          "bits": 16
+        },
+        {
+          "name": "multiply_a_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_b_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_result_q",
+          "bits": 64
+        },
+        {
+          "name": "proportional_term_q",
+          "bits": 64
+        },
+        {
+          "name": "pd_sum_q",
+          "bits": 64
+        },
+        {
+          "name": "work_mix_q",
+          "bits": 64
+        },
+        {
+          "name": "work_diff_q",
+          "bits": 64
+        },
+        {
+          "name": "ref_offset_q",
+          "bits": 32
+        },
+        {
+          "name": "ki_snapshot_q",
+          "bits": 32
+        },
+        {
+          "name": "motor_saturated_snapshot_q",
+          "bits": 1
+        },
+        {
+          "name": "integral_q24_q",
+          "bits": 64
+        },
+        {
+          "name": "work_integral_q24_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_increment_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_addend_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_candidate_q",
+          "bits": 64
+        },
+        {
+          "name": "bounded_integral_q",
+          "bits": 64
+        },
+        {
+          "name": "candidate_total_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_magnitude_q",
+          "bits": 64
+        },
+        {
+          "name": "candidate_magnitude_q",
+          "bits": 64
+        },
+        {
+          "name": "reject_outer_q",
+          "bits": 1
+        }
+      ]
+    },
+    {
+      "path": "verification/migration_stages/stage2_balance.v",
+      "sha256": "23219ca27fe23cba9329e1e7f86d1b88817749f93390bb6606e7acfb98bfe2cb",
+      "lines": 961,
+      "register_variables": 64,
+      "declared_bits": 1969,
+      "sequential_variables": 64,
+      "sequential_declared_bits": 1969,
+      "combinational_reg_variables": [],
+      "registers": [
+        {
+          "name": "motor_command",
+          "bits": 16
+        },
+        {
+          "name": "result_valid",
+          "bits": 1
+        },
+        {
+          "name": "calculating",
+          "bits": 1
+        },
+        {
+          "name": "control_fault",
+          "bits": 1
+        },
+        {
+          "name": "fault_code",
+          "bits": 8
+        },
+        {
+          "name": "position_filtered_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_error_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "angle_delta_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "position_error_counts",
+          "bits": 32
+        },
+        {
+          "name": "position_delta_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_command",
+          "bits": 32
+        },
+        {
+          "name": "angle_offset_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "raw_motor_command",
+          "bits": 32
+        },
+        {
+          "name": "control_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_loop_active_q",
+          "bits": 1
+        },
+        {
+          "name": "state_q",
+          "bits": 5
+        },
+        {
+          "name": "multiply_return_q",
+          "bits": 5
+        },
+        {
+          "name": "position_holds_q",
+          "bits": 3
+        },
+        {
+          "name": "position_due_q",
+          "bits": 1
+        },
+        {
+          "name": "position_seeded_q",
+          "bits": 1
+        },
+        {
+          "name": "angle_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "previous_angle_q",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_q",
+          "bits": 32
+        },
+        {
+          "name": "position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "angle_boost_active",
+          "bits": 1
+        },
+        {
+          "name": "position_sample_q",
+          "bits": 32
+        },
+        {
+          "name": "pending_position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ea_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ea_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_da_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ep_q",
+          "bits": 32
+        },
+        {
+          "name": "work_dp_q",
+          "bits": 32
+        },
+        {
+          "name": "work_position_q",
+          "bits": 32
+        },
+        {
+          "name": "position_target_q",
+          "bits": 32
+        },
+        {
+          "name": "external_reference_q",
+          "bits": 1
+        },
+        {
+          "name": "reference_snapshot_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ep_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_pwm1_q",
+          "bits": 32
+        },
+        {
+          "name": "work_pwm2_q",
+          "bits": 32
+        },
+        {
+          "name": "weight_snapshot_q",
+          "bits": 16
+        },
+        {
+          "name": "work_duty_q",
+          "bits": 16
+        },
+        {
+          "name": "multiply_a_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_b_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_result_q",
+          "bits": 64
+        },
+        {
+          "name": "proportional_term_q",
+          "bits": 64
+        },
+        {
+          "name": "pd_sum_q",
+          "bits": 64
+        },
+        {
+          "name": "work_mix_q",
+          "bits": 64
+        },
+        {
+          "name": "work_diff_q",
+          "bits": 64
+        },
+        {
+          "name": "ref_offset_q",
+          "bits": 32
+        },
+        {
+          "name": "ki_snapshot_q",
+          "bits": 32
+        },
+        {
+          "name": "motor_saturated_snapshot_q",
+          "bits": 1
+        },
+        {
+          "name": "integral_q24_q",
+          "bits": 64
+        },
+        {
+          "name": "work_integral_q24_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_increment_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_addend_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_candidate_q",
+          "bits": 64
+        },
+        {
+          "name": "bounded_integral_q",
+          "bits": 64
+        },
+        {
+          "name": "candidate_total_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_magnitude_q",
+          "bits": 64
+        },
+        {
+          "name": "candidate_magnitude_q",
+          "bits": 64
+        },
+        {
+          "name": "reject_outer_q",
+          "bits": 1
+        }
+      ]
+    },
+    {
+      "path": "verification/migration_stages/stage2_fixed_balance.v",
+      "sha256": "c9fb8849f747e5e11ac5045a9a15656f794d090d74f53c95231c69f1dccdb372",
+      "lines": 972,
+      "register_variables": 64,
+      "declared_bits": 1969,
+      "sequential_variables": 64,
+      "sequential_declared_bits": 1969,
+      "combinational_reg_variables": [],
+      "registers": [
+        {
+          "name": "motor_command",
+          "bits": 16
+        },
+        {
+          "name": "result_valid",
+          "bits": 1
+        },
+        {
+          "name": "calculating",
+          "bits": 1
+        },
+        {
+          "name": "control_fault",
+          "bits": 1
+        },
+        {
+          "name": "fault_code",
+          "bits": 8
+        },
+        {
+          "name": "position_filtered_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_error_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "angle_delta_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "position_error_counts",
+          "bits": 32
+        },
+        {
+          "name": "position_delta_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_command",
+          "bits": 32
+        },
+        {
+          "name": "angle_offset_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "raw_motor_command",
+          "bits": 32
+        },
+        {
+          "name": "control_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_loop_active_q",
+          "bits": 1
+        },
+        {
+          "name": "state_q",
+          "bits": 5
+        },
+        {
+          "name": "multiply_return_q",
+          "bits": 5
+        },
+        {
+          "name": "position_holds_q",
+          "bits": 3
+        },
+        {
+          "name": "position_due_q",
+          "bits": 1
+        },
+        {
+          "name": "position_seeded_q",
+          "bits": 1
+        },
+        {
+          "name": "angle_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "previous_angle_q",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_q",
+          "bits": 32
+        },
+        {
+          "name": "position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "angle_boost_active",
+          "bits": 1
+        },
+        {
+          "name": "position_sample_q",
+          "bits": 32
+        },
+        {
+          "name": "pending_position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ea_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ea_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_da_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ep_q",
+          "bits": 32
+        },
+        {
+          "name": "work_dp_q",
+          "bits": 32
+        },
+        {
+          "name": "work_position_q",
+          "bits": 32
+        },
+        {
+          "name": "position_target_q",
+          "bits": 32
+        },
+        {
+          "name": "external_reference_q",
+          "bits": 1
+        },
+        {
+          "name": "reference_snapshot_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_ep_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_q8_q",
+          "bits": 32
+        },
+        {
+          "name": "work_pwm1_q",
+          "bits": 32
+        },
+        {
+          "name": "work_pwm2_q",
+          "bits": 32
+        },
+        {
+          "name": "weight_snapshot_q",
+          "bits": 16
+        },
+        {
+          "name": "work_duty_q",
+          "bits": 16
+        },
+        {
+          "name": "multiply_a_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_b_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_result_q",
+          "bits": 64
+        },
+        {
+          "name": "proportional_term_q",
+          "bits": 64
+        },
+        {
+          "name": "pd_sum_q",
+          "bits": 64
+        },
+        {
+          "name": "work_mix_q",
+          "bits": 64
+        },
+        {
+          "name": "work_diff_q",
+          "bits": 64
+        },
+        {
+          "name": "ref_offset_q",
+          "bits": 32
+        },
+        {
+          "name": "ki_snapshot_q",
+          "bits": 32
+        },
+        {
+          "name": "motor_saturated_snapshot_q",
+          "bits": 1
+        },
+        {
+          "name": "integral_q24_q",
+          "bits": 64
+        },
+        {
+          "name": "work_integral_q24_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_increment_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_addend_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_candidate_q",
+          "bits": 64
+        },
+        {
+          "name": "bounded_integral_q",
+          "bits": 64
+        },
+        {
+          "name": "candidate_total_q",
+          "bits": 64
+        },
+        {
+          "name": "integral_magnitude_q",
+          "bits": 64
+        },
+        {
+          "name": "candidate_magnitude_q",
+          "bits": 64
+        },
+        {
+          "name": "reject_outer_q",
+          "bits": 1
+        }
+      ]
+    },
+    {
+      "path": "verification/migration_stages/stage3_balance.v",
+      "sha256": "51d5e24e47090693442655f54a54c5f03c0569099f1d09af842340d5f408e5c4",
+      "lines": 403,
+      "register_variables": 49,
+      "declared_bits": 1263,
+      "sequential_variables": 48,
+      "sequential_declared_bits": 1262,
+      "combinational_reg_variables": [
+        {
+          "name": "legal_state",
+          "bits": 1
+        }
+      ],
+      "registers": [
+        {
+          "name": "motor_command",
+          "bits": 16
+        },
+        {
+          "name": "result_valid",
+          "bits": 1
+        },
+        {
+          "name": "calculating",
+          "bits": 1
+        },
+        {
+          "name": "control_fault",
+          "bits": 1
+        },
+        {
+          "name": "fault_code",
+          "bits": 8
+        },
+        {
+          "name": "position_filtered_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_error_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "angle_delta_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "position_error_counts",
+          "bits": 32
+        },
+        {
+          "name": "position_delta_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_command",
+          "bits": 32
+        },
+        {
+          "name": "angle_offset_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "raw_motor_command",
+          "bits": 32
+        },
+        {
+          "name": "control_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_sequence",
+          "bits": 32
+        },
+        {
+          "name": "state_q",
+          "bits": 5
+        },
+        {
+          "name": "multiply_return_q",
+          "bits": 5
+        },
+        {
+          "name": "position_loop_active_q",
+          "bits": 1
+        },
+        {
+          "name": "position_seeded_q",
+          "bits": 1
+        },
+        {
+          "name": "angle_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_holds_q",
+          "bits": 3
+        },
+        {
+          "name": "position_due_q",
+          "bits": 1
+        },
+        {
+          "name": "boost_snapshot",
+          "bits": 1
+        },
+        {
+          "name": "previous_angle_error",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_error",
+          "bits": 32
+        },
+        {
+          "name": "position_filter_history",
+          "bits": 32
+        },
+        {
+          "name": "position_target",
+          "bits": 32
+        },
+        {
+          "name": "position_offset",
+          "bits": 32
+        },
+        {
+          "name": "position_sample",
+          "bits": 32
+        },
+        {
+          "name": "position_filter_candidate",
+          "bits": 32
+        },
+        {
+          "name": "angle_error",
+          "bits": 32
+        },
+        {
+          "name": "precise_angle_error",
+          "bits": 32
+        },
+        {
+          "name": "angle_difference",
+          "bits": 32
+        },
+        {
+          "name": "position_error",
+          "bits": 32
+        },
+        {
+          "name": "position_difference",
+          "bits": 32
+        },
+        {
+          "name": "position_filtered_candidate",
+          "bits": 32
+        },
+        {
+          "name": "angle_command_candidate",
+          "bits": 32
+        },
+        {
+          "name": "position_offset_candidate",
+          "bits": 32
+        },
+        {
+          "name": "position_weight",
+          "bits": 16
+        },
+        {
+          "name": "motor_command_candidate",
+          "bits": 16
+        },
+        {
+          "name": "multiply_a_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_b_q",
+          "bits": 32
+        },
+        {
+          "name": "multiply_result_q",
+          "bits": 64
+        },
+        {
+          "name": "proportional_term",
+          "bits": 64
+        },
+        {
+          "name": "proportional_derivative_sum",
+          "bits": 64
+        },
+        {
+          "name": "compensated_motor_command",
+          "bits": 64
+        },
+        {
+          "name": "raw_motor_command_candidate",
+          "bits": 64
+        },
+        {
+          "name": "legal_state",
+          "bits": 1
+        }
+      ]
+    },
+    {
+      "path": "verification/migration_stages/direct_balance.v",
+      "sha256": "61ffa6effb2268af2de4c5887fe3c37b76d687a5b23c2d479a22160a550e3891",
+      "lines": 537,
+      "register_variables": 44,
+      "declared_bits": 1067,
+      "sequential_variables": 43,
+      "sequential_declared_bits": 1066,
+      "combinational_reg_variables": [
+        {
+          "name": "legal_state",
+          "bits": 1
+        }
+      ],
+      "registers": [
+        {
+          "name": "motor_command",
+          "bits": 16
+        },
+        {
+          "name": "result_valid",
+          "bits": 1
+        },
+        {
+          "name": "calculating",
+          "bits": 1
+        },
+        {
+          "name": "control_fault",
+          "bits": 1
+        },
+        {
+          "name": "fault_code",
+          "bits": 8
+        },
+        {
+          "name": "position_filtered_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_error_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "angle_delta_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "position_error_counts",
+          "bits": 32
+        },
+        {
+          "name": "position_delta_counts",
+          "bits": 32
+        },
+        {
+          "name": "angle_command",
+          "bits": 32
+        },
+        {
+          "name": "angle_offset_adc_x4",
+          "bits": 32
+        },
+        {
+          "name": "raw_motor_command",
+          "bits": 32
+        },
+        {
+          "name": "control_sequence",
+          "bits": 32
+        },
+        {
+          "name": "position_sequence",
+          "bits": 32
+        },
+        {
+          "name": "state_q",
+          "bits": 6
+        },
+        {
+          "name": "position_loop_active_q",
+          "bits": 1
+        },
+        {
+          "name": "position_seeded_q",
+          "bits": 1
+        },
+        {
+          "name": "angle_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_holds_q",
+          "bits": 3
+        },
+        {
+          "name": "position_due_q",
+          "bits": 1
+        },
+        {
+          "name": "boost_snapshot",
+          "bits": 1
+        },
+        {
+          "name": "previous_angle_error",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_error",
+          "bits": 32
+        },
+        {
+          "name": "position_filter_history",
+          "bits": 32
+        },
+        {
+          "name": "position_target",
+          "bits": 32
+        },
+        {
+          "name": "position_offset",
+          "bits": 32
+        },
+        {
+          "name": "position_sample",
+          "bits": 32
+        },
+        {
+          "name": "position_filter_candidate",
+          "bits": 32
+        },
+        {
+          "name": "angle_error",
+          "bits": 32
+        },
+        {
+          "name": "precise_angle_error",
+          "bits": 32
+        },
+        {
+          "name": "angle_difference",
+          "bits": 32
+        },
+        {
+          "name": "position_error",
+          "bits": 32
+        },
+        {
+          "name": "position_difference",
+          "bits": 32
+        },
+        {
+          "name": "position_filtered_candidate",
+          "bits": 32
+        },
+        {
+          "name": "angle_command_candidate",
+          "bits": 32
+        },
+        {
+          "name": "position_offset_candidate",
+          "bits": 32
+        },
+        {
+          "name": "position_weight",
+          "bits": 16
+        },
+        {
+          "name": "motor_command_candidate",
+          "bits": 16
+        },
+        {
+          "name": "proportional_derivative_sum",
+          "bits": 64
+        },
+        {
+          "name": "compensated_motor_command",
+          "bits": 64
+        },
+        {
+          "name": "raw_motor_command_candidate",
+          "bits": 64
+        },
+        {
+          "name": "legal_state",
+          "bits": 1
+        }
+      ]
+    },
+    {
+      "path": "src/balance_control.v",
+      "sha256": "42513fb10230e887542c7c06e6f9bc338cd08f4f55a0849404cbf504df0c049d",
+      "lines": 507,
+      "register_variables": 32,
+      "declared_bits": 651,
+      "sequential_variables": 31,
+      "sequential_declared_bits": 650,
+      "combinational_reg_variables": [
+        {
+          "name": "legal_state",
+          "bits": 1
+        }
+      ],
+      "registers": [
+        {
+          "name": "motor_command",
+          "bits": 16
+        },
+        {
+          "name": "result_valid",
+          "bits": 1
+        },
+        {
+          "name": "calculating",
+          "bits": 1
+        },
+        {
+          "name": "control_fault",
+          "bits": 1
+        },
+        {
+          "name": "fault_code",
+          "bits": 8
+        },
+        {
+          "name": "state_q",
+          "bits": 6
+        },
+        {
+          "name": "position_loop_active_q",
+          "bits": 1
+        },
+        {
+          "name": "position_seeded_q",
+          "bits": 1
+        },
+        {
+          "name": "angle_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_history_valid_q",
+          "bits": 1
+        },
+        {
+          "name": "position_holds_q",
+          "bits": 3
+        },
+        {
+          "name": "position_due_q",
+          "bits": 1
+        },
+        {
+          "name": "boost_snapshot",
+          "bits": 1
+        },
+        {
+          "name": "previous_angle_error",
+          "bits": 32
+        },
+        {
+          "name": "previous_position_error",
+          "bits": 32
+        },
+        {
+          "name": "position_filter_history",
+          "bits": 32
+        },
+        {
+          "name": "position_target",
+          "bits": 32
+        },
+        {
+          "name": "position_offset",
+          "bits": 32
+        },
+        {
+          "name": "position_sample",
+          "bits": 32
+        },
+        {
+          "name": "position_filter_candidate",
+          "bits": 32
+        },
+        {
+          "name": "angle_error",
+          "bits": 32
+        },
+        {
+          "name": "precise_angle_error",
+          "bits": 32
+        },
+        {
+          "name": "angle_difference",
+          "bits": 32
+        },
+        {
+          "name": "position_error",
+          "bits": 32
+        },
+        {
+          "name": "position_difference",
+          "bits": 32
+        },
+        {
+          "name": "angle_command_candidate",
+          "bits": 32
+        },
+        {
+          "name": "position_offset_candidate",
+          "bits": 32
+        },
+        {
+          "name": "position_weight",
+          "bits": 16
+        },
+        {
+          "name": "motor_command_candidate",
+          "bits": 16
+        },
+        {
+          "name": "proportional_derivative_sum",
+          "bits": 64
+        },
+        {
+          "name": "compensated_motor_command",
+          "bits": 64
+        },
+        {
+          "name": "legal_state",
+          "bits": 1
+        }
+      ]
+    }
+  ]
+}

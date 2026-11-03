@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "level": "II digital simulation",
+  "scope": "Known-input pin-by-pin comparison against old motor_drv plus independent full signed16 arithmetic, cycle model, stable pulse counts, boundary/clear tests. Old unknown normalized_width default checked; no general X equivalence, synthesis, timing closure or hardware claim.",
+  "period_cycles": 5000,
+  "source_sha256": {
+    "V3/v3/src/motro.v": "fa5b58ca7d37eb91334b07d85f1f121ad06240114bc6062201103f2ab73d6480",
+    "V3/v3/tb/tb_motro.v": "988f471a8c5ed0146dc97bd787ef9e5bd3915c9e2a71dcd21445a0b9fc300b77",
+    "v2.2/src/motor_drv.v": "fbb8f4d90b5987320d2cd03be86f9390046d8f9bdbe07eaa18d6d642c5182eac",
+    "V3/v3/verification/run_motor_tests.py": "e8bda4744577363b8c68af4336a056c96a48681294d88bc08c28684ca39b60c1"
+  },
+  "temporary_build_directory": "C:\\Users\\ZLL\\AppData\\Local\\Temp\\j280_v3_motor_pkspua1q",
+  "tests": [
+    {
+      "mode": "g2005",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "summary": "PASS MOTOR cycles=684245 checks=687526 signed16=65536 pulse_periods=10 boundary_mask=3 resets=2 reblank=282",
+      "compile_log": "motor_compile_g2005.log",
+      "simulate_log": "motor_simulate_g2005.log"
+    },
+    {
+      "mode": "g2012",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "summary": "PASS MOTOR cycles=684245 checks=687526 signed16=65536 pulse_periods=10 boundary_mask=3 resets=2 reblank=282",
+      "compile_log": "motor_compile_g2012.log",
+      "simulate_log": "motor_simulate_g2012.log"
+    }
+  ],
+  "source_hashes_unchanged_during_run": true
+}

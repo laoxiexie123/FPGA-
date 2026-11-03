@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "level": "II digital simulation",
+  "scope": "Merged ADC observation block, mean/freshness continuously forced; not full acquisition. Known-input legacy cycle comparison plus independent integer model; directed compressed transaction ticks, no hardware/timing claim.",
+  "source_sha256": {
+    "V3/v3/src/adc_pend.v": "8dda1695851b260e887fef0d81ba61c484f609625c706e37cbbc9629dc6a35ad",
+    "V3/v3/tb/tb_pendulum_observer.v": "44518e4816ef53edb8f6c43f5254c63bacc0cbe8859230596f40a64fcbb25bad",
+    "v2.2/src/swing_observer.v": "e9611601e8e0ac4e1d4f66729e7222b69ef719c9033ea0c1c1e17f77364f452a",
+    "V3/v3/verification/run_observer_tests.py": "0100511cca69602834ff71fc8964b45409b57d3af88f2726521ee8180d0348aa"
+  },
+  "tests": [
+    {
+      "mode": "g2005",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "summary": "PASS OBSERVER cycles=1829 checks=1827 commits=165 models=160 stage_mask=2046",
+      "compile_log": "observer_compile_g2005.log",
+      "simulate_log": "observer_simulate_g2005.log"
+    },
+    {
+      "mode": "g2012",
+      "compile_exit": 0,
+      "simulate_exit": 0,
+      "summary": "PASS OBSERVER cycles=1829 checks=1827 commits=165 models=160 stage_mask=2046",
+      "compile_log": "observer_compile_g2012.log",
+      "simulate_log": "observer_simulate_g2012.log"
+    }
+  ],
+  "temporary_build_directory": "C:\\Users\\ZLL\\AppData\\Local\\Temp\\j280_v3_observer_7vyoeyxj",
+  "source_hashes_unchanged_during_run": true
+}

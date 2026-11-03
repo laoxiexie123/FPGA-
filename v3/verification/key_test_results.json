@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "II: full real 50MHz debounce at 1, 4 and 1000000 cycle thresholds; no count preloads.",
+  "source_sha256": {
+    "V3/v3/src/key_filter.v": "5c077059dc77124c63875425e8a5fa1b489b51300b0b8d8974befac5295560fa",
+    "V3/v3/tb/tb_key_filter.v": "88b37bd23f5d6dfa5a0f2bffe1ba6cc5b73c3031dab41ea14f6102060a12c56a",
+    "V3/v3/verification/run_key_tests.py": "954db99343e306002de970f5e74fb81715e7712ffea888f2f0a9fd0be3eabbbe"
+  },
+  "tests": [
+    {
+      "mode": "g2005",
+      "summary": "PASS KEY stable_cycles=1 checks=56 pulses=3\nPASS KEY stable_cycles=4 checks=114 pulses=3\nPASS KEY stable_cycles=1000000 checks=3000020 pulses=1\nPASS KEY_FILTER all cases at actual 50MHz; default debounce=20ms\nE:\\j280program\\V3\\v3\\tb\\tb_key_filter.v:161: $finish called at 60000400000 (1ps)",
+      "exit": 0
+    },
+    {
+      "mode": "g2012",
+      "summary": "PASS KEY stable_cycles=1 checks=56 pulses=3\nPASS KEY stable_cycles=4 checks=114 pulses=3\nPASS KEY stable_cycles=1000000 checks=3000020 pulses=1\nPASS KEY_FILTER all cases at actual 50MHz; default debounce=20ms\nE:\\j280program\\V3\\v3\\tb\\tb_key_filter.v:161: $finish called at 60000400000 (1ps)",
+      "exit": 0
+    }
+  ],
+  "source_hashes_unchanged_during_run": true
+}
